@@ -1,0 +1,182 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+th, td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table thead {
+  background-color: #f4f4f4;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (mobile) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    font-size: 1em;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th, td {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+/* Medium screens (tablet) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .tabs {
+    justify-content: space-evenly;
+  }
+
+  table {
+    font-size: 1em;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .tabs {
+    justify-content: space-between;
+  }
+
+  table {
+    font-size: 1.1em;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,86 @@
+.user-management {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.responsive-table th {
+  background-color: #f4f4f4;
+}
+
+.responsive-table td button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.responsive-table td button:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+  }
+}
